@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receipt App</title>
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/pocketbase@0.17.2/dist/pocketbase.umd.js"></script>
+
+</head>
+<body class="bg-gray-100">
+  <div id="app">
+    <div class="flex items-center justify-center min-h-screen">
+      <div class="bg-white p-6 rounded shadow-md w-full max-w-sm">
+        <h2 class="text-2xl font-bold text-center mb-4">Login</h2>
+        <form id="login-form">
+          <div class="mb-4">
+            <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+            <input type="text" id="username" class="block w-full mt-1 p-2 border rounded" required />
+          </div>
+          <div class="mb-4">
+            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+            <input type="password" id="password" class="block w-full mt-1 p-2 border rounded" required />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
